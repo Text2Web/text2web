@@ -52,24 +52,26 @@ subprojects { project ->
 
 def projectDependencies = [
         [
-                "name"        : "HTML Template",
-                "destination" : templatePath,
+                "name"        : "Application Libraries",
+                "destination" : application,
                 "dependencies": [
-                        "templates": "https://github.com/TextToWeb/templates.git",
+                        "doc": "https://github.com/TextToWeb/doc.git",
+                        "tester": "https://github.com/TextToWeb/tester.git",
+                        "processor": "https://github.com/TextToWeb/processor.git",
+                        "converter": "https://github.com/TextToWeb/converter.git",
+                        "webapp": "https://github.com/TextToWeb/webapp.git"
                 ]
         ],
         [
                 "name"        : "Other Libraries",
                 "destination" : libraryPath,
                 "dependencies": [
-                        "asciidoc"               : "https://github.com/hmtmcse/asciidoc.git",
                         "java-tm-util"               : "https://github.com/hmtmcse/java-tm-util.git",
                         "java-console-table"     : "https://github.com/hmtmcse/java-console-table.git",
                         "java-common"            : "https://github.com/hmtmcse/java-common.git",
                         "java-shell-util"        : "https://github.com/hmtmcse/java-shell-util.git",
                         "parser4java"            : "https://github.com/hmtmcse/parser4java.git",
                         "java-file-util"         : "https://github.com/hmtmcse/java-file-util.git",
-                        "java-text-and-file-util": "https://github.com/hmtmcse/java-text-and-file-util.git",
                 ]
         ]
 ]
