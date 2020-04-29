@@ -34,3 +34,4 @@ out/
 # Application
 /templates
 /libraries
+/application
