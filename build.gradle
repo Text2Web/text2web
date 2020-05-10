@@ -58,7 +58,8 @@ def projectDependencies = [
                         "tester"   : "https://github.com/Text2Web/tester.git",
                         "processor": "https://github.com/Text2Web/processor.git",
                         "converter": "https://github.com/Text2Web/converter.git",
-                        "webapp"   : "https://github.com/Text2Web/webapp.git"
+                        "webapp"   : "https://github.com/Text2Web/webapp.git",
+                        "template"   : "https://github.com/Text2Web/template.git"
                 ]
         ],
         [
