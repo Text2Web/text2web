@@ -16,7 +16,6 @@ group = 'com.text2web'
 version = '0.0.1'
 
 
-
 allprojects {
 
     repositories {
@@ -55,27 +54,27 @@ def projectDependencies = [
                 "name"        : "Application Libraries",
                 "destination" : application,
                 "dependencies": [
-                        "doc": "https://github.com/TextToWeb/doc.git",
-                        "tester": "https://github.com/TextToWeb/tester.git",
-                        "processor": "https://github.com/TextToWeb/processor.git",
-                        "converter": "https://github.com/TextToWeb/converter.git",
-                        "webapp": "https://github.com/TextToWeb/webapp.git"
-                        "webapp": "https://github.com/TextToWeb/template.git"
+                        "doc"      : "https://github.com/Text2Web/doc.git",
+                        "tester"   : "https://github.com/Text2Web/tester.git",
+                        "processor": "https://github.com/Text2Web/processor.git",
+                        "converter": "https://github.com/Text2Web/converter.git",
+                        "webapp"   : "https://github.com/Text2Web/webapp.git"
                 ]
         ],
         [
                 "name"        : "Other Libraries",
                 "destination" : libraryPath,
                 "dependencies": [
-                        "java-tm-util"               : "https://github.com/hmtmcse/java-tm-util.git",
-                        "java-console-table"     : "https://github.com/hmtmcse/java-console-table.git",
-                        "java-common"            : "https://github.com/hmtmcse/java-common.git",
-                        "java-shell-util"        : "https://github.com/hmtmcse/java-shell-util.git",
-                        "parser4java"            : "https://github.com/hmtmcse/parser4java.git",
-                        "java-file-util"         : "https://github.com/hmtmcse/java-file-util.git",
+                        "java-tm-util"      : "https://github.com/hmtmcse/java-tm-util.git",
+                        "java-console-table": "https://github.com/hmtmcse/java-console-table.git",
+                        "java-common"       : "https://github.com/hmtmcse/java-common.git",
+                        "java-shell-util"   : "https://github.com/hmtmcse/java-shell-util.git",
+                        "parser4java"       : "https://github.com/hmtmcse/parser4java.git",
+                        "java-file-util"    : "https://github.com/hmtmcse/java-file-util.git",
                 ]
         ]
 ]
+
 
 task resolveDependencies {
     doLast {

@@ -12,3 +12,13 @@ if (modulePathFile.exists()) {
     }
 }
 
+modulePath = "${application}"
+modulePathFile = file(modulePath)
+if (modulePathFile.exists()) {
+    modulePathFile.list().each { name ->
+        if (name != "empty") {
+            include(name)
+            project(":${name}").projectDir = file(modulePath + name)
+        }
+    }
+}
